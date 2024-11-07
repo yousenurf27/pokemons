@@ -21,7 +21,6 @@ const PokemonPage = () => {
       </div>
     );
   }
-  console.log(dtPokemon);
   return (
     <div className='h-full flex flex-col'>
       <div

@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, Suspense } from 'react';
 import Header from '../../components/Header';
 
 interface MainLayoutProps {
@@ -9,7 +9,7 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <main className='pt-[52px] px-4'>
       <Header />
-      {children}
+      <Suspense>{children}</Suspense>
     </main>
   );
 };

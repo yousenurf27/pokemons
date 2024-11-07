@@ -1,4 +1,4 @@
-import { FC, ReactNode, Suspense } from 'react';
+import { FC, ReactNode } from 'react';
 import Navbar from './components/Navbar';
 
 interface PokemonLayoutProps {
@@ -9,7 +9,7 @@ const PokemonLayout: FC<PokemonLayoutProps> = ({ children }) => {
   return (
     <main className='relative h-svh'>
       <Navbar />
-      <Suspense>{children}</Suspense>
+      {children}
     </main>
   );
 };

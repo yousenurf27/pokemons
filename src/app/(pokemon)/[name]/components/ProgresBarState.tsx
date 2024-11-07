@@ -17,7 +17,8 @@ const ProgresBarState = (props: IPokemonStats) => {
           <div
             className={`${
               props.base_stat > 50 ? 'bg-emerald-500' : 'bg-red-500'
-            } h-1.5 rounded-full w-[${props.base_stat}%]`}
+            } h-1.5 rounded-full`}
+            style={{ width: `${props.base_stat}%` }}
           ></div>
         </div>
       </div>
